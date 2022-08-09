@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./weather-box.css"
 import axios from "axios";
-//<p>{data.main.temp.toFixed()}°F</p>
-//<p>{data.weather[0].main}</p>
+
 const WeatherBox = () => {
 
     const [data, setData] = useState({});
@@ -29,14 +28,16 @@ const WeatherBox = () => {
                     placeholder='Enter Location'
                     type="text" />
             </div>
-            <div className="location">
-                <p>{data.name}</p>
-            </div>
-            <div className="temperature">
-                {data.main ? <p>{data.main.temp.toFixed()}°F</p> : null}
-            </div>
-            <div className="weather-description">
-                {data.main ? <p>{data.weather[0].main}</p> : null}
+            <div className="results">
+                <div className="location">
+                    <h1>{data.name}</h1>
+                </div>
+                <div className="temperature">
+                    {data.main ? <p>{data.main.temp.toFixed()}°F</p> : null}
+                </div>
+                <div className="weather-description">
+                    {data.main ? <p>{data.weather[0].main}</p> : null}
+                </div>
             </div>
 
         </div>

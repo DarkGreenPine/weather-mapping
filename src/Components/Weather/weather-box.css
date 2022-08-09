@@ -1,0 +1,47 @@
+p {
+    font-size: 1.6rem;
+  }
+
+h1 {
+    font-size: 2rem;
+}
+
+input {
+    background-color: rgba(0, 150, 136, 0.7);
+    border: none;
+    border-color: transparent;
+    background: transparent;
+    height: 35%;
+    width: 20%;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:hover {
+    background-color: rgba(0, 150, 136, 0.9);
+}
+
+.weather {
+    background-color: rgba(0, 150, 136, 0.7);
+}
+
+.results {
+    display: flex;
+}
+
+.location {
+    padding-left: 5%;
+}
+
+.temperature {
+    padding-left: 3%;
+}
+
+.weather-description {
+    padding-left: 3%;
+}
+
